@@ -1,0 +1,117 @@
+// *************************************
+//
+// Header
+// -> Main site header
+//
+// *************************************
+
+.Header {
+  background-image: url("../img/img-header-bg.png");
+  background-size: cover;
+}
+header{
+  @include background-image(linear-gradient(to top, $c-1, #2e823a)); 
+}
+.menuContainer{
+ // position:relative;
+ margin-right:0px;
+}
+.top-menu{
+  //position:absolute;
+  //top:160px; 
+  margin-top:130px;
+}
+.animal-top{
+  width:200px;
+  margin:0 auto;
+  margin-top:135px;
+
+  img{
+    width:50px;
+    margin-right:5px;
+    margin-bottom: -40px;
+  }
+}
+.top-contact{
+  background:white;
+  border-radius: 0px 0px 10px 10px;
+  padding:10px;
+  a{
+    color:black;
+    font-size: 1.2em;
+  }
+  i{
+    &:nth-of-type(1){
+      color:$c-1;
+    }
+    &:nth-of-type(2){
+      color:#cf1e1a;
+    }
+  }
+}
+// -------------------------------------
+// Module specific variables
+// -------------------------------------
+
+// -variable
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+// .Module--modifierName
+
+// -------------------------------------
+// States
+// -------------------------------------
+
+// .is-module-state
+
+// -------------------------------------
+// Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+
+// ----- Contact bar ----- //
+
+.Header-contact {
+  @extend .u-gridRow;
+  padding-bottom : $l-whiteSpace;
+  padding-top    : $l-whiteSpace;
+  background: rgba($c-black,0.5);
+}
+
+// ----- Contact bar ----- //
+
+.Header-logo {
+  @extend .u-gridRow;
+  padding-bottom : $l-whiteSpace;
+  padding-top    : $l-whiteSpace;
+  background: rgba($c-black,0.25);
+}
+
+// ----- Nav bar ----- //
+
+.Header-nav {
+  @extend .u-gridRow;
+  padding-bottom : $l-whiteSpace;
+  padding-top    : $l-whiteSpace;
+  background: $c-blue;
+}
+
+// ----- Carousel ----- //
+
+.Header-carousel {
+  @extend .u-gridRow;
+  padding-bottom : ($l-whiteSpace * 4);
+  padding-top    : ($l-whiteSpace * 4);
+}
+
+.Slider {
+	visibility: hidden;
+}
